@@ -9,7 +9,7 @@ const mode = production
 let app_url, api_url
 
 if (mode === production) {
-    app_url = "https://multivendereccoerclient.vercel.app"
+    app_url = "https://zeedaddy.vercel.app/"
     api_url = "https://multibackend-acp8.onrender.com"
 } else {
     app_url = 'http://localhost:3000'
