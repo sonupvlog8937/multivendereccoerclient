@@ -84,9 +84,9 @@ const Headers = () => {
             <div className='w-white'>
                 <div className='max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                     <div className='h-[80px] md-lg:h-[100px] flex justify-between items-center flex-wrap'>
-                        <div className='md-lg:w-full w-3/12 md-lg:pt-4'>
+                        <div className='md-lg:w-full w-3/12 md-lg:pt-2'>
                             <div className='flex justify-between items-center'>
-                                <Link to='/' className="h-[75px] w-[150px]">
+                                <Link to='/' className="h-[100px] w-[150px]">
                                     <img className='h-25% w-50%' src="/images/logo.png" alt="logo" />
                                 </Link>
                                 <div className='justify-center items-center w-[30px] h-[30px] bg-white text-slate-600 border border-slate-600 rounded-sm cursor-pointer lg:hidden md-lg:flex xl:hidden hidden' onClick={() => setShowShidebar(false)}>
