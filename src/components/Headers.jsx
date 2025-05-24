@@ -87,7 +87,7 @@ const Headers = () => {
                         <div className='md-lg:w-full w-3/12 md-lg:pt-4'>
                             <div className='flex justify-between items-center'>
                                 <Link to='/'>
-                                    <img src="/images/logo.png" alt="logo" />
+                                    <img className='h-75 w-100' src="/images/logo.png" alt="logo" />
                                 </Link>
                                 <div className='justify-center items-center w-[30px] h-[30px] bg-white text-slate-600 border border-slate-600 rounded-sm cursor-pointer lg:hidden md-lg:flex xl:hidden hidden' onClick={() => setShowShidebar(false)}>
                                     <span><FaList /></span>
@@ -151,9 +151,9 @@ const Headers = () => {
                         <div className='flex justify-star items-center gap-10'>
                             <div className='flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute'>
                                 <img src="/images/language.png" alt="" />
-                                <span><MdOutlineKeyboardArrowDown /></span>
+                                In
                                 <ul className='absolute invisible transition-all to-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
-                                    <li>Bangla</li>
+                                    <li>Bhojpuri</li>
                                     <li>English</li>
                                 </ul>
                             </div>
@@ -195,16 +195,16 @@ const Headers = () => {
                                 <span><IoIosCall /></span>
                             </div>
                             <div className='flex justify-end flex-col gap-1'>
-                                <h2 className='text-sm font-medium text-slate-700'>+8803242343243</h2>
-                                <span className='text-xs'>support 33/45 time</span>
+                                <h2 className='text-sm font-medium text-slate-700'>+91 8969737537</h2>
+                                <span className='text-xs'>support 24/7 time</span>
                             </div>
                         </div>
                         <ul className='flex flex-col justify-start items-start gap-3 text-[#1c1c1c]'>
                             <li className='flex justify-start items-center gap-2  text-sm'>
                                 <span><GrMail /></span>
-                                <span>learnwithproject@gmail.com</span>
+                                <span>sk4562944@gmail.com</span>
                             </li>
-                            <span className='text-sm'>Multi vendor ecommerce</span>
+                            <span className='text-sm'>Online shopping App</span>
                         </ul>
                     </div>
                 </div>
@@ -258,8 +258,8 @@ const Headers = () => {
                                         <span><IoIosCall /></span>
                                     </div>
                                     <div className='flex justify-end flex-col gap-1'>
-                                        <h2 className='text-md font-medium text-slate-700'>+8803242343243</h2>
-                                        <span className='text-sm'>support 33/45 time</span>
+                                        <h2 className='text-md font-medium text-slate-700'>+91 8969737537</h2>
+                                        <span className='text-sm'>support 24/7 time</span>
                                     </div>
                                 </div>
                             </div>
