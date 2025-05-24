@@ -86,7 +86,7 @@ const Headers = () => {
                     <div className='h-[80px] md-lg:h-[100px] flex justify-between items-center flex-wrap'>
                         <div className='md-lg:w-full w-3/12 md-lg:pt-4'>
                             <div className='flex justify-between items-center'>
-                                <Link to='/'>
+                                <Link to='/' className="h-50 w-75">
                                     <img className='h-25% w-50%' src="/images/logo.png" alt="logo" />
                                 </Link>
                                 <div className='justify-center items-center w-[30px] h-[30px] bg-white text-slate-600 border border-slate-600 rounded-sm cursor-pointer lg:hidden md-lg:flex xl:hidden hidden' onClick={() => setShowShidebar(false)}>
@@ -145,7 +145,7 @@ const Headers = () => {
                 </div>
                 <div className={`w-[300px] z-[9999] transition-all duration-200 fixed  ${showShidebar ? '-left-[300px]' : 'left-0'} top-0 overflow-y-auto bg-white h-screen py-6 px-8`}>
                     <div className='flex justify-start flex-col gap-6'>
-                        <Link to='/'>
+                        <Link to='/' className="h-50 w-75">
                             <img className='h-25% w-50%' src="/images/logo.png" alt="logo" />
                         </Link>
                         <div className='flex justify-star items-center gap-10'>
