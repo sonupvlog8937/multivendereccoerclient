@@ -16,10 +16,10 @@ const Home = () => {
     return (
         <div className='w-full'>
             <Heders />
-            <Banner />
-            sonu kumar
+            
             <div className='my-4 max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <Categorys />
+                <Banner />
             </div>
             <div className='py-[45px] max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <FeatureProducts products={products} />
