@@ -47,9 +47,9 @@ const Headers = () => {
                         <ul className='flex justify-start items-center gap-8'>
                             <li className='flex relative justify-center items-center gap-2 text-sm after:absolute after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px]'>
                                 <span><GrMail /></span>
-                                <span>sheikhfarid@gmail.com</span>
+                                <span>sk4562944@gmail.com</span>
                             </li>
-                            <span>Multi vendor ecommerce</span>
+                            <span>Online Shopping App</span>
                         </ul>
                         <div>
                             <div className='flex justify-center items-center gap-10'>
@@ -60,10 +60,10 @@ const Headers = () => {
                                     <a href="#"><AiFillGithub /></a>
                                 </div>
                                 <div className='flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute before:absolute before:h-[18px] before:bg-[#afafaf] before:w-[1px] before:-left-[20px]'>
-                                    <img src="/images/language.png" alt="" />
+                                    In
                                     <span><MdOutlineKeyboardArrowDown /></span>
                                     <ul className='absolute invisible transition-all to-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
-                                        <li>Bangla</li>
+                                        <li>Bhojpuri</li>
                                         <li>English</li>
                                     </ul>
                                 </div>
