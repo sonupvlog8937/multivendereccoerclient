@@ -37,10 +37,6 @@ const CheckoutForm = ({ orderId }) => {
 
     return (
         <form onSubmit={submit} id='payment-form' >
-            <LinkAuthenticationElement
-                id='link-authentication-element'
-            />
-            <PaymentElement id='payment-element' options={paymentElementOptions} />
             <button disabled={isLoading || !stripe || !elements} id='submit' className='px-10 py-[6px] rounded-sm hover:shadow-orange-500/20 hover:shadow-lg bg-orange-500 text-white'>
                 <span id='button-text'>
                     {
