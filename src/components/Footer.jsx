@@ -17,11 +17,11 @@ const Footer = () => {
             <div className='max-w-[1440px] px-16 sm:px-5 md-lg:px-12 md:px-10 flex flex-wrap mx-auto border-b py-16 md-lg:pb-10 sm:pb-6'>
                 <div className='w-3/12 lg:w-4/12 sm:w-full'>
                     <div className='flex flex-col gap-3'>
-                        <img className='w-[190px] h-[70x]' src="/images/logo1.png" alt="logo" />
+                        <img className='w-[190px] h-[70x]' src="/images/logo.png" alt="logo" />
                         <ul className='flex flex-col gap-2 text-slate-700'>
-                            <li>Address : Jehnabad, Bihar</li>
-                            <li>Phone : 8969737537</li>
-                            <li>Email : sk4562944@gmail.com</li>
+                            <li>Address : Rangpur , Kuigram</li>
+                            <li>Phone : 5873458345</li>
+                            <li>Email : farid@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='w-full flex flex-wrap justify-center items-center text-slate-700 mx-auto py-5 text-center'>
-                <span>Copyright ©{new Date().getFullYear()} All rights reserved | made by <a className='text-blue-500 underline' href="">@Sonu Prajapati</a></span>
+                <span>Copyright ©{new Date().getFullYear()} All rights reserved | made by <a className='text-blue-500 underline' href="">@Learn with Project</a></span>
             </div>
 
             <div className='hidden fixed md-lg:block w-[50px] bottom-3 h-[110px] right-2 bg-white rounded-full p-2'>
