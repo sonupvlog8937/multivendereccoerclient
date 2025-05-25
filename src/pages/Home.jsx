@@ -6,13 +6,23 @@ import Categorys from '../components/Categorys'
 import FeatureProducts from '../components/products/FeatureProducts'
 import Products from '../components/products/Products'
 import Footer from '../components/Footer'
+import Pagination from '../components/Pagination'
 import { get_category, get_products } from '../store/reducers/homeReducer'
 const Home = () => {
     const dispatch = useDispatch()
-    const {products, latest_product, topRated_product, discount_product } = useSelector(state => state.home)
+    const [pageNumber, setPageNumber] = useState(1)
+    const { products, totalProduct, parPage, latest_product, topRated_product, discount_product } = useSelector(state => state.home)
     useEffect(() => {
         dispatch(get_products())
     }, [])
+
+    useEffect(() => {
+            dispatch(
+                query_products({
+                    pageNumber
+                })
+            )
+        }, [pageNumber])
     return (
         <div className='w-full'>
             <Heders />
@@ -22,6 +32,11 @@ const Home = () => {
             </div>
             <div className='py-[45px] max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <FeatureProducts products={products} />
+            </div>
+            <div className='pt-2'>
+                {
+                    totalProduct > parPage && <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} totalItem={totalProduct} parPage={parPage} showItem={Math.floor(totalProduct / parPage)} />
+                }
             </div>
             <div className='py-10'>
                 <div className='max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10 flex flex-wrap'>
