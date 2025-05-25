@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-3'>
                         <img className='w-[190px] h-[70x]' src="/images/logo1.png" alt="logo" />
                         <ul className='flex flex-col gap-2 text-slate-700'>
-                            <li>Address : Jehnabad, India</li>
+                            <li>Address : Jehnabad, Bihar</li>
                             <li>Phone : 8969737537</li>
                             <li>Email : sk4562944@gmail.com</li>
                         </ul>
