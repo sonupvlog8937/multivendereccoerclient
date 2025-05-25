@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Headers from '../components/Headers'
 import Footer from '../components/Footer'
 import Stripe from '../components/Stripe'
+import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 const Payment = () => {
     const { state: { price, items, orderId } } = useLocation()
@@ -63,7 +64,7 @@ const Payment = () => {
                             </div>
                         </div>
                         <div className='w-screeen h-screen flex justify-center items-center flex-col gap-4'>
-                            <img src={success} alt="error logo" />
+                            <img src="/images/success.png" alt="error logo" />
                             <div className='text-[30px] text-green-600 font-[500] '>Order Successfully Placed</div>
                             <div>  <Link className='px-5 py-2 bg-green-500 rounded-sm text-white' to='/dashboard/my-orders'>Back to Dashboard</Link></div>
                         </div>
