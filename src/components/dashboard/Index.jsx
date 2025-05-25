@@ -60,7 +60,7 @@ const Index = () => {
                     </div>
                     <div className='flex flex-col justify-start items-start text-slate-600'>
                         <h2 className='text-3xl font-bold'>{cancelledOrder}</h2>
-                        <span>Cancelled Orders</span>
+                        <span>Cash One Devlivery</span>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ const Index = () => {
                                 {
                                     recentOrders.map((o, i) => <tr key={i} className='bg-white border-b'>
                                         <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o._id}</td>
-                                        <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>${o.price}</td>
+                                        <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>₹{o.price}</td>
                                         <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o.payment_status}</td>
                                         <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o.delivery_status}</td>
                                         <td scope='row' className='px-6 py-4'>
