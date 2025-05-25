@@ -21,7 +21,7 @@ const Home = () => {
                 <Categorys />
             </div>
             <div className='py-[45px] max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
-                <FeatureProducts products={latest_product} />
+                <FeatureProducts products={products} />
             </div>
             <div className='py-10'>
                 <div className='max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10 flex flex-wrap'>
