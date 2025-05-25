@@ -31,7 +31,7 @@ const Home = () => {
             <Heders />
             <Banner />
             <div className='flex item-center justify-center'>
-                <Link className='px-5 w-[146px] py-2 bg-blue-500 rounded-sm text-white' to='/shops'> Now</Link>
+                <Link className='px-5 w-[146px] py-2 bg-blue-500 rounded-sm text-white' to='/shops'>Shop Now</Link>
             </div>
             <div className='my-4 max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <Categorys />
