@@ -219,10 +219,10 @@ const Details = () => {
                             <div className='text-2xl text-red-500 font-bold flex gap-3'>
                                 {
                                     product.discount !== 0 ? <>
-                                        <h2 className='line-through'>${product.price}</h2>
-                                        <h2 className='text-black'>${product.price - Math.floor((product.price * product.discount) / 100)} </h2>
+                                        <h2 className='line-through'>₹{product.price}</h2>
+                                        <h2 className='text-black'>₹{product.price - Math.floor((product.price * product.discount) / 100)} </h2>
                                         <h2>(-{product.discount}%)</h2>
-                                    </> : <h2>Price : ${product.price}</h2>
+                                    </> : <h2>Price : ₹{product.price}</h2>
                                 }
                             </div>
                             {/* <div className='text-slate-600'>
