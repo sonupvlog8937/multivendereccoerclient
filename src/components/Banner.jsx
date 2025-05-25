@@ -37,7 +37,7 @@ const Banner = () => {
             <div className='max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <div className='w-full flex flex-wrap md-lg:gap-8'>
                     <div className='w-full'>
-                        <div className='my-8'>
+                        <div className='my-4'>
                             <Carousel
                                 autoPlay={true}
                                 infinite={true}
