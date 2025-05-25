@@ -17,15 +17,22 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-            dispatch(
-                query_products({
-                    pageNumber
-                })
-            )
-        }, [pageNumber])
+        dispatch(
+            query_products({
+                pageNumber
+            })
+        )
+    }, [pageNumber])
+
+    const resetRating = () => {
+        dispatch(query_products({
+            pageNumber
+        }))
+    }
     return (
         <div className='w-full'>
             <Heders />
+            <div><Link className='px-5 py-2 bg-blue-500 rounded-sm text-white' to='/shops'>Shop Now</Link></div>
             <Banner />
             <div className='my-4 max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <Categorys />
@@ -33,6 +40,7 @@ const Home = () => {
             <div className='py-[45px] max-w-[1440px] mx-auto px-16 sm:px-5 md-lg:px-12 md:px-10'>
                 <FeatureProducts products={products} />
             </div>
+            sonu kumar change hua
             <div className='pt-2'>
                 {
                     totalProduct > parPage && <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} totalItem={totalProduct} parPage={parPage} showItem={Math.floor(totalProduct / parPage)} />
