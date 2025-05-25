@@ -9,8 +9,8 @@ const mode = production
 let app_url, api_url
 
 if (mode === production) {
-    app_url = "https://zeedaddy.vercel.app/"
-    api_url = "https://multibackend-acp8.onrender.com"
+    app_url = "https://shopmy-cyan.vercel.app"
+    api_url = "https://api-ecommerce-fos4.onrender.com"
 } else {
     app_url = 'http://localhost:3000'
     api_url = 'http://localhost:5000'

@@ -219,10 +219,10 @@ const Details = () => {
                             <div className='text-2xl text-red-500 font-bold flex gap-3'>
                                 {
                                     product.discount !== 0 ? <>
-                                        <h2 className='line-through'>₹{product.price}</h2>
-                                        <h2 className='text-black'>₹{product.price - Math.floor((product.price * product.discount) / 100)} </h2>
+                                        <h2 className='line-through'>${product.price}</h2>
+                                        <h2 className='text-black'>${product.price - Math.floor((product.price * product.discount) / 100)} </h2>
                                         <h2>(-{product.discount}%)</h2>
-                                    </> : <h2>Price : ₹{product.price}</h2>
+                                    </> : <h2>Price : ${product.price}</h2>
                                 }
                             </div>
                             {/* <div className='text-slate-600'>
@@ -317,7 +317,7 @@ const Details = () => {
                                                     <h2 className='text-slate-600 py-1'>{p.name?.slice(0,40)}...</h2>
                                                     <div className='flex gap-2'>
                                                         <h2 className='text-slate-600'>Price: </h2>
-                                                        <span className=' text-lg font-bold'>₹{p.price}</span>
+                                                        <span className=' text-lg font-bold'>${p.price}</span>
                                                         
                                                     </div>
                                                     <div className='flex gap-2'>
@@ -376,7 +376,7 @@ const Details = () => {
                                                 <div className='p-4 flex flex-col gap-1'>
                                                     <h2 className='text-slate-600 text-lg font-semibold'>{p.name}</h2>
                                                     <div className='flex justify-start items-center gap-3'>
-                                                        <h2 className='text-[#6699ff] text-lg font-bold'>₹{p.price}</h2>
+                                                        <h2 className='text-[#6699ff] text-lg font-bold'>${p.price}</h2>
                                                         <div className='flex'>
                                                             <Ratings ratings={p.rating} />
                                                         </div>
