@@ -8,7 +8,7 @@ import Products from '../components/products/Products'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Pagination from '../components/Pagination'
-import { get_category, get_products } from '../store/reducers/homeReducer'
+import { get_category, get_products, query_products } from '../store/reducers/homeReducer'
 const Home = () => {
     const dispatch = useDispatch()
     const [pageNumber, setPageNumber] = useState(1)
