@@ -63,26 +63,29 @@ const Payment = () => {
                                 }
                             </div>
                         </div>
-                        
+
                         <div className='w-5/12 md:w-full'>
+                            <div>
                                 <div className='w-screeen h-screen flex justify-center items-center flex-col gap-4'>
-                            <img src="/images/success.png" alt="error logo" />
-                            <div className='text-[30px] text-green-600 font-[500] '>Order Successfully Placed</div>
-                            <div>  <Link className='px-5 py-2 bg-green-500 rounded-sm text-white' to='/dashboard/my-orders'>Back to Dashboard</Link></div>
-                        </div>
-                            <div className='pl-2 md:pl-0 md:mb-0'>
-                                <div className='bg-white shadow p-5 text-slate-600 flex flex-col gap-3'>
-                                    <h2>Order Summary</h2>
-                                    <div className='flex justify-between items-center'>
-                                        <span>{items} items and shipping fee included</span>
-                                        <span>₹{price}</span>
-                                    </div>
-                                    <div className='flex justify-between items-center font-semibold'>
-                                        <span>Total Amount</span>
-                                        <span className='text-lg text-orange-500'>₹{price}</span>
+                                    <img src="/images/success.png" alt="error logo" />
+                                    <div className='text-[30px] text-green-600 font-[500] '>Order Successfully Placed</div>
+                                    <div>  <Link className='px-5 py-2 bg-green-500 rounded-sm text-white' to='/dashboard/my-orders'>Back to Dashboard</Link></div>
+                                </div>
+                                <div className='pl-2 md:pl-0 md:mb-0'>
+                                    <div className='bg-white shadow p-5 text-slate-600 flex flex-col gap-3'>
+                                        <h2>Order Summary</h2>
+                                        <div className='flex justify-between items-center'>
+                                            <span>{items} items and shipping fee included</span>
+                                            <span>₹{price}</span>
+                                        </div>
+                                        <div className='flex justify-between items-center font-semibold'>
+                                            <span>Total Amount</span>
+                                            <span className='text-lg text-orange-500'>₹{price}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
